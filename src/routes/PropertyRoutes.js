@@ -15,7 +15,10 @@ class PropertyRoutes {
     }
     config() {
         this.routesApiProperty.get("/view", ViewController_1.default.getProperty);
+        this.routesApiProperty.get("/viewOne/:property_id", ViewController_1.default.getPropertyOne);
+        this.routesApiProperty.get("/viewOneImagen/:property_id", ViewController_1.default.getPropertyImages);
         this.routesApiProperty.get("/viewsix", ViewController_1.default.getPropertySix);
+        this.routesApiProperty.get("/viewList", ViewController_1.default.getViewList);
         this.routesApiProperty.get("/count", ViewController_1.default.getCouunt);
         this.routesApiProperty.post("/create", Createcontroller_1.default.createProperty);
         this.routesApiProperty.put("/update", UpdateController_1.default.updateProperty);
